@@ -22,7 +22,7 @@ const Header: React.FC = () => (
         />
       </button>
     </section>
-    <input />
+    <input placeholder="   &#128269;  搜尋 messenger" />
   </div>
 );
 
