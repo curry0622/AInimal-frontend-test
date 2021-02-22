@@ -1,10 +1,10 @@
 import React from 'react';
-import Chatroom from './chatroom';
+import Messenger from './messenger';
 
 function App() {
   return (
     <div className="App">
-      <Chatroom />
+      <Messenger />
     </div>
   );
 }

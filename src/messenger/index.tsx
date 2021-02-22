@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
+import Preview from './preview';
+import Chatroom from './chatroom';
+import Info from './info';
 
-const Chatroom: React.FC = () => {
+const Messenger: React.FC = () => {
   const fetchData = async () => {
     const response = await fetch(
       'https://cors-anywhere.herokuapp.com/https://recruit.ainimal.io/friend_list',
@@ -23,7 +26,13 @@ const Chatroom: React.FC = () => {
     })();
   }, []);
 
-  return <main>chatroom</main>;
+  return (
+    <main>
+      <Preview />
+      <Chatroom />
+      <Info />
+    </main>
+  );
 };
 
-export default Chatroom;
+export default Messenger;
