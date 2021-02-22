@@ -3,10 +3,21 @@ import classNames from 'classnames';
 import Header from './header';
 import Content from './content';
 
-const Preview: React.FC = () => (
+interface IUserData {
+  id: number;
+  nickname: string;
+  last_message: string;
+  last_message_timestamp: string;
+}
+
+interface IProps {
+  userDataArr: IUserData[];
+}
+
+const Preview: React.FC<IProps> = ({ userDataArr }) => (
   <div className={classNames('messenger-preview-container')}>
     <Header />
-    <Content />
+    <Content userDataArr={userDataArr} />
   </div>
 );
 

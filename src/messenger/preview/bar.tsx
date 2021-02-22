@@ -1,14 +1,26 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Bar: React.FC = () => (
+interface IProps {
+  id: number;
+  nickname: string;
+  last_message: string;
+  last_message_timestamp: string;
+}
+
+const Bar: React.FC<IProps> = ({
+  id,
+  nickname,
+  last_message,
+  last_message_timestamp,
+}) => (
   <div className={classNames('messenger-preview-content-bar-container')}>
-    <img alt="avatar" src={`${process.env.PUBLIC_URL}/avatars/000.jpg`} />
+    <img alt="avatar" src={`${process.env.PUBLIC_URL}/avatars/${id}.jpg`} />
     <section>
-      <h4>蔡哲平</h4>
+      <h4>{nickname}</h4>
       <div>
-        <span>最後訊息 </span>
-        <span> 1小時</span>
+        <span>{last_message} </span>
+        <span> {last_message_timestamp}</span>
       </div>
     </section>
   </div>
