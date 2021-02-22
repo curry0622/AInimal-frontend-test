@@ -16,28 +16,25 @@ const Bar: React.FC<IProps> = ({
   last_message_timestamp,
 }) => {
   const calTimeDiff = () => {
-    if (dayjs().diff(last_message_timestamp, 'second') < 60) {
+    if (dayjs().diff(last_message_timestamp, 'second') <= 60) {
       return ` · ${dayjs().diff(last_message_timestamp, 'second')}秒`;
     }
-    if (dayjs().diff(last_message_timestamp, 'minute') < 60) {
+    if (dayjs().diff(last_message_timestamp, 'minute') <= 60) {
       return ` · ${dayjs().diff(last_message_timestamp, 'minute')}分鐘`;
     }
-    if (dayjs().diff(last_message_timestamp, 'hour') < 24) {
+    if (dayjs().diff(last_message_timestamp, 'hour') <= 24) {
       return ` · ${dayjs().diff(last_message_timestamp, 'hour')}小時`;
     }
-    if (dayjs().diff(last_message_timestamp, 'day') < 7) {
+    if (dayjs().diff(last_message_timestamp, 'day') <= 7) {
       return ` · ${dayjs().diff(last_message_timestamp, 'day')}天`;
     }
-    if (dayjs().diff(last_message_timestamp, 'week') < 5) {
+    if (dayjs().diff(last_message_timestamp, 'week') <= 4) {
       return ` · ${dayjs().diff(last_message_timestamp, 'week')}星期`;
     }
-    if (dayjs().diff(last_message_timestamp, 'month') < 12) {
+    if (dayjs().diff(last_message_timestamp, 'month') <= 12) {
       return ` · ${dayjs().diff(last_message_timestamp, 'month')}個月`;
     }
-    if (dayjs().diff(last_message_timestamp, 'year') < 12) {
-      return ` · ${dayjs().diff(last_message_timestamp, 'year')}年前`;
-    }
-    return '';
+    return ` · ${dayjs().diff(last_message_timestamp, 'year')}年前`;
   };
 
   return (
