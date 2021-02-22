@@ -1,22 +1,21 @@
 import React from 'react';
 import classNames from 'classnames';
+import Bar from './bar';
 
 const Content: React.FC = () => (
   <div className={classNames('messenger-preview-content-container')}>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
-    <div>content</div>
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
   </div>
 );
 
