@@ -3,7 +3,20 @@ import classNames from 'classnames';
 
 const Content: React.FC = () => (
   <div className={classNames('messenger-preview-content-container')}>
-    Content
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
   </div>
 );
 

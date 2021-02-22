@@ -1,0 +1,28 @@
+.messenger-preview-content-container {
+  @include flex(column, flex-start, center);
+  width: 100%;
+  height: 37.5rem;
+  overflow-y: scroll;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcc0c4;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
