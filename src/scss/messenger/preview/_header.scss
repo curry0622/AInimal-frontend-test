@@ -4,9 +4,36 @@
   border: red solid 1px;
 
   > section {
-    @include flex(row, space-evenly, center);
+    @include flex(row, space-between, center);
     width: 100%;
     margin-top: 1rem;
+
+    > img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: contain;
+      border-radius: 50%;
+      border: #e8e8e8 solid 1px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold
+    }
+
+    button {
+      @include flex(row, center, center);
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: 0;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+      }
+    }
   }
 
   > input {
