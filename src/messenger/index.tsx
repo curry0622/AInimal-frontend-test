@@ -48,8 +48,6 @@ const Messenger: React.FC = () => {
     })();
   }, []);
 
-  // useEffect(() => console.log(apiData), [apiData]);
-
   return (
     <main>
       <Preview
