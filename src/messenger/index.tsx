@@ -24,7 +24,7 @@ const Messenger: React.FC = () => {
 
   const fetchData = async () => {
     const response = await fetch(
-      'https://cors-anywhere.herokuapp.com/https://recruit.ainimal.io/friend_list',
+      'https://secret-ocean-49799.herokuapp.com/https://recruit.ainimal.io/friend_list',
       {
         method: 'GET',
         mode: 'cors',

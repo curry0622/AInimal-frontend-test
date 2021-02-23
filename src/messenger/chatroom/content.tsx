@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 const Content: React.FC = () => (
   <div className={classNames('messenger-chatroom-content-container')}>
-    Content
+    {/* Content */}
   </div>
 );
 
